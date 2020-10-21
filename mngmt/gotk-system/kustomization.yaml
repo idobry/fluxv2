@@ -3,6 +3,6 @@ kind: Kustomization
 resources:
 - ./monitoring/gitrepo.yaml
 - ./monitoring/kustomization.yaml
-- ./toolkit-components.yaml
-- ./toolkit-kustomization.yaml
-- ./toolkit-source.yaml
+- ./gotk-system/toolkit-components.yaml
+- ./gotk-system/toolkit-kustomization.yaml
+- ./gotk-system/toolkit-source.yaml
