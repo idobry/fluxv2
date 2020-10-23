@@ -1,7 +1,7 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-- ./monitoring/*.yaml
+- ./monitoring/gitrepository.yaml
 - ./gotk-system/toolkit-components.yaml
 - ./gotk-system/toolkit-kustomization.yaml
 - ./gotk-system/toolkit-source.yaml
