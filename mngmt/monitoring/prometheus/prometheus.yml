@@ -18,6 +18,12 @@ scrape_configs:
   - source_labels: [__meta_kubernetes_service_name, __meta_kubernetes_endpoint_port_name]
     action: keep
     regex: kubernetes;https
+    
+remote_write:
+- url: https://prometheus-us-central1.grafana.net/api/prom/push
+  basic_auth:
+    username: 16718
+    password: eyJrIjoiODgwMmVjNTg3ODMwODMzNTRjOGM4MmQ3ZDIyYWFkMmM3MTYwMDk2YyIsIm4iOiJpZG8tdG9rZW4iLCJpZCI6NDI1NDExfQ==
 
 # Kubernetes pods
 - job_name: kubernetes-pods
