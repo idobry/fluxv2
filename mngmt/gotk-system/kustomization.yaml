@@ -4,4 +4,3 @@ resources:
 - ./toolkit-components.yaml
 - ./toolkit-kustomization.yaml
 - ./toolkit-source.yaml
-- ./workloads-kustomization.yaml
