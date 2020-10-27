@@ -1,13 +1,13 @@
 global:
   scrape_interval: 10s
-scrape_configs:
-
+  
 remote_write:
 - url: https://prometheus-us-central1.grafana.net/api/prom/push
   basic_auth:
     username: 16718
     password: eyJrIjoiYmQ1ZGQ0MjU1NjJkZTc4N2E1ODlkNTA0NTFlZjJiYTgzNTc1MGI4ZCIsIm4iOiJkZW1vLWZsdXh2MiIsImlkIjo0MjU0MTF9
 
+scrape_configs:
 # Kubernetes API
 - job_name: kubernetes-apiserver
   kubernetes_sd_configs:
